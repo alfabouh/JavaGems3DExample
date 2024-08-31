@@ -12,6 +12,7 @@
 package jgems_api.test;
 
 import javagems3d.engine.JGems3D;
+import javagems3d.engine_api.app.JGemsGameInstance;
 import jgems_api.test.events.TestEvents;
 import jgems_api.test.manager.TestManager;
 import jgems_api.test.resources.ModelLoader;
@@ -27,6 +28,9 @@ import javagems3d.engine_api.resources.IAppResourceLoader;
 
 @JGemsGameEntry(gameTitle = "Test", gameVersion = "0.1a", devStage = JGemsGameEntry.DevStage.PRE_ALPHA)
 public class TestGame implements JGemsGameApplication {
+    @JGemsGameInstance
+    private static TestGame horrorGame;
+
     public TestGame() {
     }
 
