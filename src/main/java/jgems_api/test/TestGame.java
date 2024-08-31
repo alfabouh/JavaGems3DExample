@@ -29,7 +29,7 @@ import javagems3d.engine_api.resources.IAppResourceLoader;
 @JGemsGameEntry(gameTitle = "Test", gameVersion = "0.1a", devStage = JGemsGameEntry.DevStage.PRE_ALPHA)
 public class TestGame implements JGemsGameApplication {
     @JGemsGameInstance
-    private static TestGame horrorGame;
+    private static TestGame game;
 
     public TestGame() {
     }
